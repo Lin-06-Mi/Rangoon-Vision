@@ -1,0 +1,448 @@
+/* ==== TITLE & SUBTITLE ====*/
+.title {
+    -fx-text-fill: #f39838;
+}
+.subtitle {
+    -fx-text-fill: #94a3b8;
+}
+/* ===== BASE ===== */
+.base-scroll {
+    -fx-background-color: linear-gradient(to left,#F1F5F9,#9FB0EA);
+    -fx-background: #16243a;
+    -fx-border-color: transparent;
+}
+
+/* ========== ROOT & SIDEBAR ========== */
+.root-pane {
+    -fx-background-color: #16243a;
+}
+
+.sidebar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e9eef5;
+    -fx-border-width: 0 1 0 0;
+}
+
+.brand-accent {
+    -fx-text-fill: #f39838;
+}
+
+.sidebar-divider {
+    -fx-background-color: #eef2f8;
+}
+
+.menu-header {
+    -fx-text-fill: #b3bfcd;
+}
+
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5b6b80;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-padding: 10 14 10 14;
+}
+
+.nav-btn:hover {
+    -fx-background-color: #f1f5f9;
+    -fx-text-fill: #16243a;
+}
+
+.nav-btn-active {
+    -fx-background-color: #eef4ff;
+    -fx-text-fill: #1d4ed8;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-padding: 10 14 10 14;
+}
+
+.account-card {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 12;
+    -fx-padding: 10;
+}
+
+.account-avatar {
+    -fx-background-color: #e3edff;
+    -fx-background-radius: 17;
+    -fx-text-fill: #2563eb;
+}
+
+.account-name {
+    -fx-text-fill: #16243a;
+}
+
+.account-role {
+    -fx-text-fill: #94a3b8;
+}
+
+/* ========== MAIN CONTENT & TOP BAR ========== */
+
+
+.content-canvas {
+     -fx-background-color: linear-gradient(to right,#16243a,#00d3ff);
+}
+
+
+
+.search-field {
+    -fx-background-radius: 10;
+    -fx-background-color: #ffffff;
+    -fx-border-color: linear-gradient(to left,#00d3ff,#f38983);
+	-fx-border-width:2;
+    -fx-border-radius: 10;
+    -fx-padding: 0 14 0 14;
+    -fx-font-size: 12px;
+    -fx-text-fill: #16243a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.search-field:focused {
+    -fx-border-color: #f39838;
+}
+
+.theme-toggle-btn {
+    -fx-background-color: #1e2f47;
+    -fx-text-fill: #dbe7f5;
+    -fx-background-radius: 10;
+    -fx-border-color: #33475f;
+    -fx-border-radius: 10;
+    -fx-padding: 10 16 10 16;
+    -fx-cursor: hand;
+    -fx-font-size: 11.5px;
+}
+
+.theme-toggle-btn:hover {
+    -fx-background-color: #263b59;
+    -fx-border-color: #f39838;
+}
+
+/* ========== CARDS & MAP ========== */
+.surface-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 16;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(gaussian, rgba(6, 14, 26, 0.30), 22, 0, 0, 8);
+}
+
+.card-title {
+    -fx-text-fill: #16243a;
+}
+
+.card-subtitle {
+    -fx-text-fill: #94a3b8;
+}
+
+.active-route-banner {
+    -fx-background-color: linear-gradient(to right, #2563eb, #1e40af);
+    -fx-background-radius: 10;
+    -fx-padding: 9 14 9 14;
+}
+
+.active-route-num {
+    -fx-text-fill: #ffffff;
+}
+
+.live-badge {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+    -fx-background-radius: 20;
+    -fx-padding: 2 8 2 8;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 8.5px;
+}
+
+.active-route-name {
+    -fx-text-fill: #dbe7ff;
+}
+
+.active-eta {
+    -fx-text-fill: #16243a;
+}
+
+.status-pill-ontime {
+    -fx-background-color: #dcfce7;
+    -fx-background-radius: 20;
+    -fx-padding: 3 9 3 9;
+    -fx-text-fill: #15803d;
+    -fx-font-size: 9.5px;
+    -fx-font-weight: bold;
+}
+
+.status-pill-delayed {
+    -fx-background-color: #fee2e2;
+    -fx-background-radius: 20;
+    -fx-padding: 3 9 3 9;
+    -fx-text-fill: #b91c1c;
+    -fx-font-size: 9.5px;
+    -fx-font-weight: bold;
+}
+
+.map-preview-card {
+    -fx-background-color: linear-gradient(to bottom right, #eaf1fb, #dbe7f5);
+    -fx-background-radius: 16;
+    -fx-border-color: #cfdced;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(6, 14, 26, 0.30), 22, 0, 0, 8);
+}
+
+.map-pin-icon {
+    -fx-text-fill: #2563eb;
+}
+
+.map-title {
+    -fx-text-fill: #475569;
+}
+
+.map-subtitle {
+    -fx-text-fill: #94a3b8;
+}
+
+.stops-badge {
+    -fx-background-color: #f1f5f9;
+    -fx-background-radius: 20;
+    -fx-padding: 3 9 3 9;
+    -fx-text-fill: #64748b;
+    -fx-font-size: 9.5px;
+}
+
+.updated-caption {
+    -fx-text-fill: #b3bfcd;
+}
+
+/* ========== DYNAMIC UPCOMING BUS ROWS ========== */
+.upcoming-bus-row {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 10;
+    -fx-padding: 9 12 9 12;
+}
+
+.upcoming-bus-row:hover {
+    -fx-background-color: #f1f5f9;
+}
+
+.upcoming-badge {
+    -fx-background-color: #e8f0ff;
+    -fx-background-radius: 7;
+    -fx-padding: 4 8 4 8;
+    -fx-text-fill: #2563eb;
+    -fx-font-size: 10.5px;
+    -fx-font-weight: bold;
+}
+
+.upcoming-title {
+    -fx-text-fill: #16243a;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.upcoming-sub {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 9.5px;
+}
+
+.upcoming-eta-pill {
+    -fx-background-color: #f1f5f9;
+    -fx-background-radius: 20;
+    -fx-padding: 3 10 3 10;
+    -fx-text-fill: #475569;
+    -fx-font-size: 9.5px;
+    -fx-font-weight: bold;
+}
+
+.upcoming-period {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 9.5px;
+}
+
+.empty-upcoming-label {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 11px;
+    -fx-padding: 12 4 12 4;
+}
+
+/* ========== PROFILE VIEW (MATCHING DASHBOARD STYLE) ========== */
+
+.profile-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 16;
+    -fx-border-color: #e9eef5;
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(6, 14, 26, 0.30), 22, 0, 0, 8);
+}
+
+.profile-section-label {
+    -fx-text-fill: #16243a;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.profile-divider {
+    -fx-background-color: #eef2f8;
+}
+
+.profile-field-label {
+    -fx-text-fill: #334155;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: bold;
+}
+
+.profile-input {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 10;
+    -fx-border-color: #dbe3ee;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-padding: 0 12 0 12;
+    -fx-font-size: 12px;
+    -fx-text-fill: #16243a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.profile-input:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f39838;
+}
+
+.profile-secondary-btn {
+    -fx-background-color: #f8fafc;
+    -fx-text-fill: #16243a;
+    -fx-background-radius: 10;
+    -fx-border-color: #dbe3ee;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-padding: 8 14 8 14;
+    -fx-cursor: hand;
+    -fx-font-size: 11.5px;
+}
+
+.profile-secondary-btn:hover {
+    -fx-background-color: #eef4ff;
+    -fx-border-color: #2563eb;
+    -fx-text-fill: #1d4ed8;
+}
+
+.profile-save-btn {
+    -fx-background-color: #16243a;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10;
+    -fx-padding: 9 18 9 18;
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.profile-save-btn:hover {
+    -fx-background-color: #f39838;
+    -fx-text-fill: #16243a;
+}
+
+.profile-cancel-btn {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #5b6b80;
+    -fx-background-radius: 10;
+    -fx-border-color: #dbe3ee;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-padding: 9 16 9 16;
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+}
+
+.profile-cancel-btn:hover {
+    -fx-background-color: #f1f5f9;
+    -fx-text-fill: #16243a;
+}
+
+/* ========== BUS ROUTES VIEW (MATCHING DASHBOARD STYLE) ========== */
+/* ========== SCROLLPANE -> ANCHORPANE -> VBOX FULL WIDTH ========== */
+
+.search-box {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-border-color: #dbe3ee;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-padding: 0 14 0 14;
+    -fx-font-size: 12px;
+    -fx-text-fill: #16243a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.search-box:focused {
+    -fx-border-color: #f39838;
+}
+
+.route-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 14;
+    -fx-border-color: #e9eef5;
+    -fx-border-width: 1;
+    -fx-border-radius: 14;
+    -fx-padding: 16 20 16 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(6, 14, 26, 0.24), 16, 0, 0, 6);
+}
+
+.route-card:hover {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #f39838;
+}
+
+.route-title {
+    -fx-text-fill: #16243a;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.route-sub {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 11.5px;
+}
+/* ========== BUS STOPS VIEW (MATCHING DASHBOARD STYLE) ========== */
+
+
+.busstops-header-box {
+    -fx-background-color: #16243a;
+    -fx-padding: 26 26 14 26;
+}
+
+
+.busstops-list-container {
+    -fx-background-color: #16243a;
+    -fx-padding: 4 26 26 26;
+}
+
+.stop-item-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 14;
+    -fx-border-color: #e9eef5;
+    -fx-border-width: 1;
+    -fx-border-radius: 14;
+    -fx-padding: 16 20 16 20;
+    -fx-effect: dropshadow(gaussian, rgba(6, 14, 26, 0.24), 16, 0, 0, 6);
+}
+
+.stop-item-card:hover {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #f39838;
+}
+
+.stop-name-label {
+    -fx-text-fill: #1d4ed8;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.stop-fav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ef4444;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 4 8 4 8;
+    -fx-background-radius: 8;
+}
+
+.stop-fav-btn:hover {
+    -fx-background-color: #fef2f2;
+}

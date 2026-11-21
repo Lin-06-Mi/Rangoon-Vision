@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="1050.0" styleClass="root-pane" stylesheets="@../RVModel/design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RVController.UserMainController">
+
+   <!-- ============ LEFT SIDEBAR ============ -->
+   <left>
+      <VBox prefHeight="657.0" prefWidth="257.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="22.0" left="20.0" right="20.0" top="26.0" />
+         </padding>
+         <children>
+            <AnchorPane prefHeight="110.0" prefWidth="216.0">
+               <children>
+                  <ImageView fx:id="imgView" fitHeight="97.0" fitWidth="161.0" layoutY="-3.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/photo_2026-11-11_15-22-55.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="122.0" layoutY="46.0" styleClass="brand-accent" text="Vision">
+                     <font>
+                        <Font name="Felix Titling" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLogoTitle1" layoutX="79.0" layoutY="21.0" styleClass="brand-title" text="Rangoon">
+                     <font>
+                        <Font name="Felix Titling" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="87.0" styleClass="brand-subtitle" text="Real-time bus tracking">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+
+                        <Pane prefHeight="22.0" />
+            <Pane prefHeight="1.0" styleClass="sidebar-divider" />
+            <Pane prefHeight="20.0" />
+
+                        <Label styleClass="menu-header" text="MENU">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="8.0" />
+
+                        <!-- Navigation -->
+            <VBox spacing="6">
+               <children>
+                  <Button fx:id="btnHome" alignment="CENTER_LEFT" maxWidth="1.7693e+308" onAction="#clickHome" styleClass="nav-btn" text="Home">
+                     <font>
+                        <Font size="13.5" />
+                     </font>
+                  </Button>
+
+                              <Button fx:id="btnRoute" alignment="CENTER_LEFT" maxWidth="1.7693e+308" onAction="#clickRoute" styleClass="nav-btn" text="Routes">
+                     <font>
+                        <Font size="13.5" />
+                     </font>
+                  </Button>
+
+                              <Button fx:id="btnFav" alignment="CENTER_LEFT" maxWidth="1.7693e+308" onAction="#clickFav" styleClass="nav-btn" text="Favorites">
+                     <font>
+                        <Font size="13.5" />
+                     </font>
+                  </Button>
+
+                              <!-- Active item -->
+                  <Button fx:id="btnprofile" alignment="CENTER_LEFT" maxWidth="1.7693e+308" onAction="#clickprofile" styleClass="nav-btn-active" text="Profile">
+                     <font>
+                        <Font name="System Bold" size="13.5" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+
+                        <Pane VBox.vgrow="ALWAYS" />
+
+                        <!-- Account card -->
+            <HBox alignment="CENTER_LEFT" spacing="10" styleClass="account-card">
+               <children>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="34.0" styleClass="account-avatar" text="U">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <VBox spacing="1">
+                     <children>
+                        <Label styleClass="account-name" text="UserName">
+                           <font>
+                              <Font name="System Bold" size="11.5" />
+                           </font>
+                        </Label>
+                        <Label styleClass="account-role" text="Passenger">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+
+   <!-- ============ MAIN CONTENT ============ -->
+   <center>
+      <ScrollPane fx:id="homepane" fitToHeight="true" fitToWidth="true" styleClass="content-scroll" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="639.0" prefWidth="717.0" spacing="18" styleClass="content-canvas">
+               <padding>
+                  <Insets bottom="26.0" left="26.0" right="26.0" top="26.0" />
+               </padding>
+               <children>
+
+                                    <!-- Top bar: greeting + search + theme -->
+                  <HBox alignment="CENTER_LEFT" spacing="16">
+                     <children>
+                        <VBox spacing="3">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" spacing="8">
+                                 <children>
+                                    <Label styleClass="title" text="Hello, UserName">
+                                       <font>
+                                          <Font name="System Bold" size="21.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="👋" textFill="#f38983">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label styleClass="subtitle" text="Track your bus in real-time">
+                                 <font>
+                                    <Font size="11.5" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+
+                                          <Pane HBox.hgrow="ALWAYS" />
+
+                                          <TextField fx:id="txtsearch" onAction="#clicksearch" prefHeight="40.0" prefWidth="268.0" promptText="Search bus route (e.g. YBS 65)..." styleClass="search-field" />
+                        <Button fx:id="btnmode" mnemonicParsing="false" onAction="#clickmode" prefHeight="31.0" prefWidth="80.0" styleClass="theme-toggle-btn" text="☀  dark" />
+                     </children>
+                  </HBox>
+
+                                    <!-- Middle row: live bus + map -->
+                  <HBox prefHeight="168.0" spacing="16">
+                     <children>
+
+                                          <!-- Active bus card -->
+                        <VBox spacing="13" styleClass="surface-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" spacing="8" styleClass="active-route-banner">
+                                 <children>
+                                    <Label fx:id="lblActiveRouteNum" styleClass="active-route-num" text="YBS 65">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label styleClass="live-badge" text="LIVE" />
+                                    <Pane HBox.hgrow="ALWAYS" />
+                                    <Label fx:id="lblActiveRouteName" styleClass="active-route-name" text="Hledan → Dagon">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+
+                                                <HBox alignment="BOTTOM_LEFT" spacing="10">
+                                 <children>
+                                    <Label fx:id="lblActiveEta" styleClass="active-eta" text="5 min">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane HBox.hgrow="ALWAYS" />
+                                    <Label fx:id="lblActiveStatus" styleClass="status-pill-ontime" text="On time" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+
+                                          <!-- Map preview -->
+                        <StackPane minWidth="260.0" prefWidth="300.0" styleClass="map-preview-card">
+                           <children>
+                              <VBox alignment="CENTER" spacing="6">
+                                 <children>
+                                    <Label styleClass="map-pin-icon" text="◉">
+                                       <font>
+                                          <Font size="26.0" />
+                                       </font>
+                                    </Label>
+                                    <Label styleClass="map-title" text="Map View Area">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label styleClass="map-subtitle" text="Live GPS tracking">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+
+                                    <!-- Bottom row: route details + upcoming buses -->
+                  <HBox spacing="16" VBox.vgrow="ALWAYS">
+                     <children>
+
+                                          <!-- Route details -->
+                        <VBox prefWidth="300.0" spacing="14" styleClass="surface-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" spacing="8">
+                                 <children>
+                                    <VBox spacing="1">
+                                       <children>
+                                          <Label styleClass="card-title" text="Route Details">
+                                             <font>
+                                                <Font name="System Bold" size="13.5" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblDetailSubtitle" styleClass="card-subtitle" text="YBS 65  ·  Hledan → Dagon">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <Pane HBox.hgrow="ALWAYS" />
+                                    <Label fx:id="lblStopsCount" styleClass="stops-badge" text="5 stops" />
+                                 </children>
+                              </HBox>
+
+                                                <!-- Dynamic Timeline -->
+                              <VBox fx:id="vboxTimelineStops" spacing="15" />
+
+                                                <Pane VBox.vgrow="ALWAYS" />
+                              <Label styleClass="updated-caption" text="Updated just now">
+                                 <font>
+                                    <Font size="9.5" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+
+                                          <!-- Upcoming buses -->
+                        <VBox prefWidth="300.0" spacing="12" styleClass="surface-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" spacing="8">
+                                 <children>
+                                    <Label styleClass="card-title" text="Upcoming Buses">
+                                       <font>
+                                          <Font name="System Bold" size="13.5" />
+                                       </font>
+                                    </Label>
+                                    <Pane HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+
+                                                <!-- Dynamic Upcoming Bus Rows -->
+                              <VBox fx:id="upcomingBusesContainer" spacing="8" />
+                           </children>
+                        </VBox>
+
+                    </children>
+                  </HBox>
+
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+
+</BorderPane>

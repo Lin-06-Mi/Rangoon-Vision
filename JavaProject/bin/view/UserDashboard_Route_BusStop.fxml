@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="favScrollPane" fitToWidth="true" hbarPolicy="NEVER" prefHeight="651.0" prefWidth="793.0" stylesheets="@../RVModel/design.css" vbarPolicy="AS_NEEDED" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RVController.UserDashboardRouteBusStopController">
+   <content>
+      <AnchorPane fx:id="favAnchorPane" prefHeight="817.0" prefWidth="774.0" styleClass="base-scroll">
+         <children>
+            <VBox fx:id="favMainVBox" prefHeight="657.0" prefWidth="791.0" spacing="14.0" styleClass="busstops-root" AnchorPane.bottomAnchor="-336.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="26.0" left="26.0" right="26.0" top="26.0" />
+               </padding>
+               <children>
+
+                  <!-- Header -->
+                  <VBox spacing="3.0">
+                     <children>
+                        <Label styleClass="title" text="Bus Stops">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="subtitle" text="Select or search a bus route to view details">
+                           <font>
+                              <Font size="11.5" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+
+                  <!-- Dynamic Favorite List Container (updates when user clicks fav button) -->
+                  <VBox fx:id="favListContainer" maxWidth="1.7976931348623157E308" spacing="12.0">
+                     <children>
+
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" styleClass="stop-item-card">
+                           <children>
+                              <Label styleClass="stop-name-label" text="Sule" />
+                              <Pane HBox.hgrow="ALWAYS" />
+                              <Button fx:id="btnFav46th1" mnemonicParsing="false" onAction="#toggleFavorite" styleClass="stop-fav-btn" text="♡" />
+                           </children>
+                        </HBox>
+
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" styleClass="stop-item-card">
+                           <children>
+                              <Label styleClass="stop-name-label" text="46th Street" />
+                              <Pane HBox.hgrow="ALWAYS" />
+                              <Button fx:id="btnFav46th" mnemonicParsing="false" onAction="#toggleFavorite" styleClass="stop-fav-btn" text="♡" />
+                           </children>
+                        </HBox>
+
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" styleClass="stop-item-card">
+                           <children>
+                              <Label styleClass="stop-name-label" text="50th Street" />
+                              <Pane HBox.hgrow="ALWAYS" />
+                              <Button fx:id="btnFav50th" mnemonicParsing="false" onAction="#toggleFavorite" styleClass="stop-fav-btn" text="♡" />
+                           </children>
+                        </HBox>
+
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" styleClass="stop-item-card">
+                           <children>
+                              <Label styleClass="stop-name-label" text="Gon Nyin" />
+                              <Pane HBox.hgrow="ALWAYS" />
+                              <Button fx:id="btnFavGonNyin" mnemonicParsing="false" onAction="#toggleFavorite" styleClass="stop-fav-btn" text="♡" />
+                           </children>
+                        </HBox>
+
+                        <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" styleClass="stop-item-card">
+                           <children>
+                              <Label styleClass="stop-name-label" text="Bo Gale Zay" />
+                              <Pane HBox.hgrow="ALWAYS" />
+                              <Button fx:id="btnFavBoGaleZay" mnemonicParsing="false" onAction="#toggleFavorite" styleClass="stop-fav-btn" text="♡" />
+                           </children>
+                        </HBox>
+
+                     </children>
+                  </VBox>
+
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
